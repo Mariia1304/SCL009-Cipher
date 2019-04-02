@@ -1,4 +1,6 @@
  //declarando variables globales
+ //addEventListener
+ //btn.addEventListener('click', () =>{})
  let text;
  let offset;
  let returnEncode;
@@ -19,7 +21,7 @@
  //funcion que se llama al precionar button cifrar
  function cifrar() {
      // ponemos valor de cifrado vacia para que no encatene outputs
-     returnEncode = '';
+     //returnEncode = '';
      takeValue();
      if (offset == '' && text.length == 0) {
          alertOffset.innerHTML = '<p style="color:red;">Dale offset!</p>';
@@ -53,7 +55,7 @@
  }
  //funcion que se llama al precionar button decifrar
  function decifrar() {
-     returnDecode = '';
+     // returnDecode = '';
      takeValue();
      if (offset == '' && text.length == 0) {
          alertOffset.innerHTML = '<p style="color:red;">Dale offset!</p>';
@@ -76,7 +78,6 @@
          returnDecode = window.cipher.decode(offset, text);
          campInput.value = '';
          campOffset.value = '';
-         decifrado = decifrado.toLowerCase();
          campOutput.value = returnDecode;
          campInput.focus();
      }

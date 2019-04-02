@@ -4,6 +4,7 @@ let charCode;
 let charCodeNew;
 window.cipher = {
     encode: (offset, string) => {
+        cifrado = '';
         for (let i = 0; i < string.length; i++) {
             //obtenemos nuer de cahrcode por cada caracter en texto ingresado
             charCode = string.charCodeAt(i);
@@ -24,6 +25,7 @@ window.cipher = {
         return (cifrado);
     },
     decode: (offset, string) => {
+        decifrado = '';
         for (let i = 0; i < string.length; i++) {
             charCode = string.charCodeAt(i);
             if (charCode >= 65 && charCode <= 90) {
@@ -33,6 +35,7 @@ window.cipher = {
             } else {
                 charCode = String.fromCharCode(charCode);
                 decifrado = decifrado + charCode;
+                decifrado = decifrado.toLowerCase();
             }
         }
         return (decifrado);
