@@ -1,1 +1,16 @@
-/* Acá va tu código */
+button {
+    margin: 5px 0px;
+}
+input {
+    border-radius: 5px;
+}
+p {
+    margin: 0px;
+}
+#input {
+    margin-top: 10px;
+}
+label {
+    display: block;
+    text-align: center;
+}
