@@ -1,28 +1,22 @@
  //declarando variables globales
- //addEventListener
- //btn.addEventListener('click', () =>{})
  let text;
  let offset;
  let returnEncode;
  let returnDecode;
+ const btnLimpiar = document.getElementById('limpiar');
+ const btnDCifrar = document.getElementById('btnDCifr');
+ const btnCifrar = document.getElementById('btnCifr');
  const alertOffset = document.getElementById('alert2');
  const alertText = document.getElementById('alert');
  const campOffset = document.getElementById('offset');
  const campInput = document.getElementById('input');
  const campOutput = document.getElementById('output');
- // const encode
- // const decode
- //funciones que se llaman con onclick
- document.getElementById('btnCifr').onclick = cifrar;
- document.getElementById('btnDCifr').onclick = decifrar;
- document.getElementById('limpiar').onclick = limpiar;
  //poner focus en primer textarea
  campInput.focus();
- //funcion que se llama al precionar button cifrar
- function cifrar() {
-     // ponemos valor de cifrado vacia para que no encatene outputs
-     //returnEncode = '';
+ //escuchamos eventos de dom
+ btnCifrar.addEventListener('click', () => {
      takeValue();
+     //validacion de datos
      if (offset == '' && text.length == 0) {
          alertOffset.innerHTML = '<p style="color:red;">Dale offset!</p>';
          alertText.innerHTML = '<p style="color:red;">hay que llenar el campo!</p>';
@@ -52,10 +46,9 @@
          //ponemos focus en input vacio
          campInput.focus();
      }
- }
- //funcion que se llama al precionar button decifrar
- function decifrar() {
-     // returnDecode = '';
+ });
+ //escuchamos eventos de dom
+ btnDCifrar.addEventListener('click', () => {
      takeValue();
      if (offset == '' && text.length == 0) {
          alertOffset.innerHTML = '<p style="color:red;">Dale offset!</p>';
@@ -81,14 +74,13 @@
          campOutput.value = returnDecode;
          campInput.focus();
      }
- }
-
- function limpiar() {
+ });
+ btnLimpiar.addEventListener('click', () => {
      campInput.value = '';
      campOffset.value = '';
      campOutput.value = '';
      location.reload();
- }
+ });
  const takeValue = () => {
      //sacamos valor de texto ingresado y lo guardamos dentro de variable text
      text = campInput.value;
