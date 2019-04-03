@@ -16,6 +16,7 @@ window.cipher = {
                 charCodeNew = String.fromCharCode(charCodeNew);
                 // aqui estamos agregando cada nuevo caracter cifrado
                 cifrado = cifrado + charCodeNew;
+                cifrado = cifrado.toLowerCase();
             } else {
                 //en caso si number de cararcter no esta dentro 65 -90 no lo vamos a cifrar(por mientras)
                 charCode = String.fromCharCode(charCode);
@@ -32,10 +33,10 @@ window.cipher = {
                 charCodeNew = (charCode + 65 - offset) % 26 + 65;
                 charCodeNew = String.fromCharCode(charCodeNew);
                 decifrado = decifrado + charCodeNew;
+                decifrado = decifrado.toLowerCase();
             } else {
                 charCode = String.fromCharCode(charCode);
                 decifrado = decifrado + charCode;
-                decifrado = decifrado.toLowerCase();
             }
         }
         return (decifrado);
