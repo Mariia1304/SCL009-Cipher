@@ -30,8 +30,12 @@ Los **usuarios principales** son users de redes sociales, correos electronicos, 
 
  - El producto debe tener el campo para insertar el texto, campo para definir el offset campo para salida de texto ya cifrado y dos botones:cifrar y decifrar.(opcional: boton 'limpiar').
  - Aqui viene el mockup:
- - 
+ - Para darle estilo a la app ocupé bootstrap 4.
+ - Para funcionalidad vanilla JavaScript.
 
+
+* los tests:
+![tests](src/)
  
  
  
