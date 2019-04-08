@@ -20,8 +20,8 @@ Es una **aplicacion para cifrar(y decifrar) las contarseñas**. La idea es que t
 Los **usuarios principales** son users de redes sociales, correos electronicos, cuentas bancarias etc.
 
 ### How to use:
-*Tiene que ir a este enlace:
-`
+* Tiene que ir a este enlace:
+[aqui](https://mariia1304.github.io/SCL009-Cipher/src/index.html)
  
  
  
