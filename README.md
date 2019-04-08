@@ -26,7 +26,7 @@ Los **usuarios principales** son users de redes sociales, correos electronicos, 
 
 
 ### Proceso y decisiones de diseño:
-#####Definiciones de diseño:
+##### Definiciones de diseño:
 
  - El producto debe tener el campo para insertar el texto, campo para definir el offset campo para salida de texto ya cifrado y dos botones:cifrar y decifrar.(opcional: boton 'limpiar').
  - Aqui viene el mockup:
@@ -35,7 +35,7 @@ Los **usuarios principales** son users de redes sociales, correos electronicos, 
 
 
 * los tests:
-![tests](src/)
+![tests](src/img/tests.png)
  
  
  
