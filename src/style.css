@@ -14,3 +14,13 @@ label {
     display: block;
     text-align: center;
 }
+img {
+    margin-top: 20px;
+    width: 60%;
+}
+.display {
+    display: none;
+}
+#aboutText {
+    margin-top: 20px;
+}
