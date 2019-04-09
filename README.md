@@ -16,22 +16,15 @@ Los **usuarios principales** son users de redes sociales, correos electronicos, 
 
  - El producto debe tener el campo para insertar el texto, campo para definir el offset campo para salida de texto ya cifrado y dos botones:cifrar y decifrar.(opcional: boton 'limpiar').Ademas diseño debe ser responsive(para despositivos moviles)
  - Control de flujo:
+   ![control de flujo](src/img/control.jpg)
  - sketch:
- 
- - Para darle estilo y responsive a la app ocupé bootstrap 4.
+   ![scetch](src/img/sketch.jpg)
+ - para armar estructura de la app ocupo HTML5
+ - Para darle estilo y responsive a la app ocupé CSS3,bootstrap 4.
  - Para funcionalidad vanilla JavaScript.
-
-
-
-
-
-
-
-
-
-
-* los tests:
-![tests](src/img/tests.png)
+ - Hice tests de funcionalidad
+     * los tests:
+     ![tests](src/img/tests.png)
  
  
  
