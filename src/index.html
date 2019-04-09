@@ -46,9 +46,7 @@
                             <div class="col-md-12 ">
                                 <div id="alert">
                                 </div>
-                                <!--  <textarea id="input" placeholder="Su mensaje aqui" style="width: 100%; height: 20vh;" type="text">
-                    </textarea> -->
-                                <textarea cols="30" id="input" name="" placeholder="Su mensaje aqui" rows="10" style="border-radius: 5px;width: 100%;height: 20vh;">
+                                <textarea cols="30" id="input" name="" placeholder="Su mensaje aqui" rows="10">
                                 </textarea>
                             </div>
                         </div>
@@ -59,15 +57,15 @@
                                 </label>
                                 <div id="alert2">
                                 </div>
-                                <input id="offset" style="height: 7vh; width: 100%" type="number" value=""/>
+                                <input id="offset" type="number" value=""/>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-12 ">
-                                <button class="btn btn-dark" id="btnCifr" style="width: 49%;">
+                                <button class="btn btn-dark" id="btnCifr">
                                     cifrar
                                 </button>
-                                <button class="btn btn-dark" id="btnDCifr" style="width: 49%;">
+                                <button class="btn btn-dark" id="btnDCifr">
                                     decifrar
                                 </button>
                             </div>
@@ -75,9 +73,9 @@
                         <div class="row">
                             <div class="col-md-12 ">
                                 <!-- <input id="output" placeholder="Resultado" style="width: 100%; height: 20vh;" type="text" value=""/> -->
-                                <textarea cols="30" id="output" name="" readonly="true" rows="10" style="display:inline-block;width: 100%; height: 20vh;border-radius: 5px; position: relative;">
+                                <textarea cols="30" id="output" name="" readonly="true" rows="10">
                                 </textarea>
-                                <a href="" style="position: absolute;right:2vw;top:.6vh; color: black;">
+                                <a href="" id="copy">
                                     <i class="fas fa-copy">
                                     </i>
                                 </a>
@@ -85,7 +83,7 @@
                         </div>
                         <div class="row">
                             <div class="col-md-12 ">
-                                <button class="btn btn-dark" id="limpiar" style="width: 100%;">
+                                <button class="btn btn-dark" id="limpiar">
                                     limpiar
                                 </button>
                             </div>
