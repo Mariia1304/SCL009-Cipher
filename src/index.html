@@ -2,108 +2,122 @@
 <html>
     <head>
         <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
         <title>
-            Caesar Cipher
+            Cifrado Cesar
         </title>
+        <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" rel="stylesheet"/>
+        <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet"/>
         <link href="style.css" rel="stylesheet"/>
     </head>
     <body>
-        <head>
-            <meta charset="utf-8"/>
-            <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-            <title>
-                Cifrado Cesar
-            </title>
-            <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" rel="stylesheet"/>
-            <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet"/>
-            <link href="style.css" rel="stylesheet"/>
-        </head>
-        <body>
-            <nav class="navbar navbar-dark bg-dark">
-                <a class="navbar-brand" href="#">
-                    <h2>
-                        Código de César
-                    </h2>
-                </a>
-                <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" id="about" type="button">
-                    <span class="navbar-toggler-icon">
-                    </span>
-                </button>
-            </nav>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <p class="display" id="aboutText">
-                            En criptografía, el cifrado César, también conocido como cifrado por desplazamiento, código de César o desplazamiento de César, es una de las técnicas de cifrado más simples y más usadas. Es un tipo de cifrado por sustitución en el que una letra en el texto original es reemplazada por otra letra que se encuentra un número fijo de posiciones más adelante en el alfabeto. Por ejemplo, con un desplazamiento de 3, la A sería sustituida por la D (situada 3 lugares a la derecha de la A), la B sería reemplazada por la E, etc. Este método debe su nombre a Julio César, que lo usaba para comunicarse con sus generales.
-                            <br/>
-                            Para probar este cifrado ponga su mensaje en este campo:
-                        </p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="row">
-                            <div class="col-md-12 ">
-                                <div id="alert">
-                                </div>
-                                <textarea cols="30" id="input" name="" placeholder="Su mensaje aqui" rows="10">
-                                </textarea>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12 ">
-                                <label for="">
-                                    numero de desplazamiento:
-                                </label>
-                                <div id="alert2">
-                                </div>
-                                <input id="offset" type="number" value=""/>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12 ">
-                                <button class="btn btn-dark" id="btnCifr">
-                                    cifrar
-                                </button>
-                                <button class="btn btn-dark" id="btnDCifr">
-                                    decifrar
-                                </button>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12 ">
-                                <!-- <input id="output" placeholder="Resultado" style="width: 100%; height: 20vh;" type="text" value=""/> -->
-                                <textarea cols="30" id="output" name="" readonly="true" rows="10">
-                                </textarea>
-                                <a href="" id="copy">
-                                    <i class="fas fa-copy">
-                                    </i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12 ">
-                                <button class="btn btn-dark" id="limpiar">
-                                    limpiar
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 offset-md-2">
-                        <img alt="" class="img-fluid" src="https://upload.wikimedia.org/wikipedia/commons/1/13/Julius_Caesar_Coustou_Louvre.png"/>
-                    </div>
+        <nav class="navbar navbar-dark bg-dark">
+            <a class="navbar-brand" href="#" id="about">
+                <h2>
+                    Código de César
+                </h2>
+                <p>
+                    Puedes cifrar y decifrar tus contraseñas,mensajes, cartas etc!
+                </p>
+            </a>
+            <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon">
+                </span>
+            </button>
+        </nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="display" id="aboutText">
+                        En criptografía, el cifrado César, también conocido como cifrado por desplazamiento, código de César o desplazamiento de César, es una de las técnicas de cifrado más simples y más usadas. Es un tipo de cifrado por sustitución en el que una letra en el texto original es reemplazada por otra letra que se encuentra un número fijo de posiciones más adelante en el alfabeto. Por ejemplo, con un desplazamiento de 3, la A sería sustituida por la D (situada 3 lugares a la derecha de la A), la B sería reemplazada por la E, etc. Este método debe su nombre a Julio César, que lo usaba para comunicarse con sus generales.
+                        <br/>
+                    </p>
                 </div>
             </div>
-            <script crossorigin="anonymous" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" src="https://code.jquery.com/jquery-3.3.1.slim.min.js">
-            </script>
-            <script crossorigin="anonymous" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
-            </script>
-            <script crossorigin="anonymous" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
-            </script>
-            <script src="cipher.js">
-            </script>
-            <script src="index.js">
-            </script>
-        </body>
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="row">
+                        <div class="col-md-4" style="margin-top: 5px">
+                            <p style="text-align: center;border:2px solid gray;margin-top: 10px;border-radius: 5px; padding: 5px;">
+                                Quires probar? Pon tu contraseña o mensaje en este campo
+                            </p>
+                        </div>
+                        <div class="col-md-8" style="margin-top: 5px">
+                            <div id="alert">
+                            </div>
+                            <textarea cols="30" id="input" name="" placeholder="Su mensaje aqui" rows="10">
+                            </textarea>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top: 10px">
+                        <div class="col-md-4" style="margin-top: 5px">
+                            <p style="text-align: center;border:2px solid gray;border-radius: 5px; padding: 5px">
+                                ahora pon numero de desplazamiento(puede ser positivo o negativo)
+                            </p>
+                        </div>
+                        <div class="col-md-8" style="margin-top: 5px">
+                            <div id="alert2">
+                            </div>
+                            <input id="offset" type="number" value=""/>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top: 10px;">
+                        <div class="col-md-4" style="margin-top: 5px">
+                            <p style="text-align: center;border:2px solid gray;border-radius: 5px;padding: 5px">
+                                Ahora elige una opción
+                            </p>
+                        </div>
+                        <div class="col-md-8" style="margin-top: 5px">
+                            <button class="btn btn-dark" id="btnCifr">
+                                cifrar
+                            </button>
+                            <button class="btn btn-dark" id="btnDCifr">
+                                decifrar
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top: 10px;">
+                        <div class="col-md-4" style="margin-top: 5px">
+                            <p style="text-align: center;border:2px solid gray;border-radius: 5px;padding: 5px">
+                                En este campo puedes ver resultado
+                            </p>
+                        </div>
+                        <div class="col-md-8" style="margin-top: 5px">
+                            <textarea cols="30" id="output" name="" readonly="true" rows="10">
+                            </textarea>
+                            <a href="" id="copy">
+                                <i class="fas fa-copy">
+                                </i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top: 10px">
+                        <div class="col-md-4" style="margin-top: 5px">
+                            <p style="text-align: center;border:2px solid gray;border-radius: 5px;padding: 5px">
+                                Si quieres decifrar texto que recien cifraste solamente tienes que copiarlo de su campo y poner en primer campo agregando el numero de desplazamiento
+                            </p>
+                        </div>
+                        <div class="col-md-8" style="margin-top: 5px">
+                            <button class="btn btn-dark" id="limpiar">
+                                limpiar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <img alt="" class="img-fluid" src="https://upload.wikimedia.org/wikipedia/commons/1/13/Julius_Caesar_Coustou_Louvre.png"/>
+                </div>
+            </div>
+        </div>
+        <script crossorigin="anonymous" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" src="https://code.jquery.com/jquery-3.3.1.slim.min.js">
+        </script>
+        <script crossorigin="anonymous" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
+        </script>
+        <script crossorigin="anonymous" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+        </script>
+        <script src="cipher.js">
+        </script>
+        <script src="index.js">
+        </script>
     </body>
 </html>
