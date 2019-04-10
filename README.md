@@ -25,6 +25,8 @@ Los **usuarios principales** son users de redes sociales, correos electronicos, 
  - Hice tests de funcionalidad
      * los tests:
      ![tests](src/img/tests.png)
+ - Para planificación use trello.com
+     ![trello](src/img/trello.png)
  
  
  
