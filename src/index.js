@@ -12,6 +12,7 @@
  const campOffset = document.getElementById('offset');
  const campInput = document.getElementById('input');
  const campOutput = document.getElementById('output');
+ const copy = document.getElementById('copy');
  //poner focus en primer textarea
  campInput.focus();
  //escuchamos eventos de dom
@@ -95,3 +96,6 @@
      let aboutText = document.getElementById('aboutText');
      aboutText.classList.toggle("display");
  });
+ copy.addEventListener('click', (event) => {
+     event.preventDefault();
+ })
