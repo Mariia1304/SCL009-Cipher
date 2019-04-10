@@ -30,7 +30,7 @@ label {
 }
 img {
     margin-top: 20px;
-    width: 60%;
+    width: 80%;
 }
 .display {
     display: none;
@@ -47,6 +47,6 @@ img {
 #copy {
     position: absolute;
     right: 20px;
-    top: 25px;
+    top: 5px;
     color: black;
 }
