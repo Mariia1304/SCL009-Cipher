@@ -3,15 +3,19 @@
  let offset;
  let returnEncode;
  let returnDecode;
+ //botones de dom
  const btnAbout = document.getElementById('about');
  const btnLimpiar = document.getElementById('limpiar');
  const btnDCifrar = document.getElementById('btnDCifr');
  const btnCifrar = document.getElementById('btnCifr');
+ //alertas de validacion
  const alertOffset = document.getElementById('alert2');
  const alertText = document.getElementById('alert');
+ //campos
  const campOffset = document.getElementById('offset');
  const campInput = document.getElementById('input');
  const campOutput = document.getElementById('output');
+ //iconito copy
  const copy = document.getElementById('copy');
  //poner focus en primer textarea
  campInput.focus();
