@@ -4,9 +4,6 @@ button {
 input {
     border-radius: 5px;
 }
-p {
-    margin: 0px;
-}
 #input {
     margin-top: 10px;
     border-radius: 5px;
@@ -49,4 +46,19 @@ img {
     right: 20px;
     top: 5px;
     color: black;
+}
+.col-md-4 {
+    margin-top: 5px;
+}
+.hint__p {
+    text-align: center;
+    border: 2px solid gray;
+    border-radius: 5px;
+    padding: 5px;
+}
+.campo {
+    margin-top: 5px;
+}
+.row {
+    margin-top: 10px;
 }
